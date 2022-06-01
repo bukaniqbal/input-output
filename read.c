@@ -7,11 +7,9 @@ int main()
 {
   char c[25];
 
-  int fd1 = open("sample.txt", O_RDONLY, 0);
-  int fd2 = open("sample2.txt", O_RDONLY, 0);
+  int fd = open("file.txt", O_RDONLY, 0);
 
-  read(fd1, &c, 25);
-  read(fd2, &c, 3);
+  read(fd, &c, 25);
 
   for (int i = 0; i < sizeof(c); i++)
   {
