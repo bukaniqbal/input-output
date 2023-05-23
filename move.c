@@ -8,7 +8,7 @@ char *c = (char *) calloc(100, sizeof(char));
 fd = open(argv[1], O_RDONLY); 
 if (fd < 0) { perror("r1"); exit(1); } 
   
-sz = read(fd, c, 10); 
+sz = read(fd, c, 250); 
 c[sz] = '\0'; 
  
   
