@@ -10,7 +10,7 @@ int main()
   // then file foo.txt is created.
   int fd = open("foo.txt", O_RDONLY | O_CREAT);
 
-  printf("fd = %d\n", fd);
+  printf("Ini adalah file kedua\n");
 
   if (fd == -1)
   {
